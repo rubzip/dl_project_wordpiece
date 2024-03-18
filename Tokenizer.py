@@ -24,7 +24,7 @@ def load_sst_data(path,
     random.shuffle(data)
     return data
 
-def clean(word: str, sep):
+def clean(word: str, sep=''):
     return sep.join(filter(lambda x: x in string.ascii_lowercase, word.lower()))
 
 def tokenize(sentence: str):
